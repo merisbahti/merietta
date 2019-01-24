@@ -20,11 +20,11 @@ HomeStack.navigationOptions = {
     <TabBarIcon
       focused={focused}
       name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+        Platform.OS === 'ios' ? ('ios-information-circle' + (focused ? '' : '-outline')) : (
+          'md-information-circle'
+        )
       }
-    />
+      />
   ),
 }
 
@@ -36,8 +36,8 @@ LinksStack.navigationOptions = {
   tabBarLabel: 'Links',
   tabBarIcon: ({ focused }: TabBarIconProps) => (
     <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+    focused={focused}
+    name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
     />
   ),
 }

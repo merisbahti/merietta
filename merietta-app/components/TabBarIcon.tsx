@@ -8,7 +8,7 @@ interface TabBarIconProps {
   focused: boolean
 }
 
-export default class TabBarIcon extends React.PureComponent<TabBarIconProps> {
+export default class TabBarIcon extends React.Component<TabBarIconProps> {
   render () {
     return (
       <Icon.Ionicons
