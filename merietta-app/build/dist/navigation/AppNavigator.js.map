@@ -1,1 +1,0 @@
-{"version":3,"file":"AppNavigator.js","sourceRoot":"","sources":["../../../navigation/AppNavigator.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,kBAAkB,EAAE,qBAAqB,EAAE,MAAM,kBAAkB,CAAA;AAE5E,OAAO,gBAAgB,MAAM,oBAAoB,CAAA;AAEjD,eAAe,kBAAkB,CAAC,qBAAqB,CAAC;IACtD,uDAAuD;IACvD,kEAAkE;IAClE,IAAI,EAAE,gBAAgB;CACvB,CAAC,CAAC,CAAA"}

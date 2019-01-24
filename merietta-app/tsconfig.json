@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "es2015",
+    "skipLibCheck": true,
     "outDir": "build/dist",
     "sourceMap": true,
     "jsx": "react",
