@@ -16,7 +16,7 @@ export default class AppContainer extends Container<AppStore> {
     todos: [],
     status: 'connecting' as Status
   }
-  socket?: SocketIOClient.Socket = io('ws://localhost:3000')
+  socket?: SocketIOClient.Socket = io('ws://merietta-api-2.herokuapp.com')
   newTodo = () => {
     const action = { type: 'add-todo' }
     if (this.socket) {

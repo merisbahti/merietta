@@ -18,17 +18,17 @@ export default class HomeScreen extends React.PureComponent<{}, HomeScreenState>
               <Content>
                 <Text>{store.state.status}</Text>
                 {
-                  (store.state.todos || []).map((item: Todo, i) => (
+                  store.state.todos.map((item: Todo, i) => (
                     <CheckboxItem key={i}
-                      onRemove={() => store.removeTodo(i)}
-                      onCheck={() => store.checkTodo(i)}
-                      onChangeText={(name: string) => store.renameTodo(name, i)}
-                      text={item.text}
-                      checked={item.checked} />
+                    onRemove={() => store.removeTodo(i)}
+                    onCheck={() => store.checkTodo(i)}
+                    onChangeText={(name: string) => store.renameTodo(name, i)}
+                    text={item.name}
+                    checked={item.checked} />
                   ))
                 }
                 <Icon
-                  onPress={store.newTodo}
+                onPress={store.newTodo}
                   style={{ paddingTop: 7 }}
                   color={'green'}
                   name={'add-box'}
