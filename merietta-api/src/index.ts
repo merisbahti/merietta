@@ -1,5 +1,5 @@
 import io from 'socket.io'
-const server = io.listen(3000);
+const server = io.listen(process.env.PORT || 3000);
 import store from './store'
 
 server.on("connection", function(socket) {
