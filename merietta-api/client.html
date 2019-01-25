@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Socket io client</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+        <script>
+            var socket = io("http://localhost:3000");
+            // use your socket
+            socket.on("state", (message) => {
+              console.log(message)
+                // do something with the message.
+            })
+            const newTodo = { type: 'add-todo', payload: {name: 'gräddost'} }
+            const r = { type: 'rename-todo', payload: {name: 'gräddost 2kg', index: 0} }
+            const c = { type: 'check-todo', payload: {index: 0} }
+            const re = { type: 'remove-todo', payload: {index: 0} }
+            socket.emit("action", JSON.stringify(newTodo))
+            socket.emit("action", JSON.stringify(r))
+            socket.emit("action", JSON.stringify(c))
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

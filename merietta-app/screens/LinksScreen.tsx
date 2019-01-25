@@ -2,11 +2,11 @@ import * as React from 'react'
 import { Text, ScrollView, StyleSheet } from 'react-native'
 
 export default class LinksScreen extends React.PureComponent {
-  static navigationOptions = { title: 'Links', }
+  static navigationOptions = { title: 'Links' }
   render () {
     return (
       <ScrollView style={styles.container}>
-        <Text>Hello there</Text>
+        <Text>Hello there!</Text>
       </ScrollView>
     )
   }
